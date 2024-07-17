@@ -1,0 +1,4 @@
+2024/07/14 12:47:52.593034 logger.go:65: Error: pq: relation "users" does not exist
+2024/07/14 15:39:00.048713 logger.go:65: Error: while querying user by email-c3ncoywq5r@smykwb.com during user creation: <nil>
+2024/07/14 18:53:00.510503 logger.go:65: Error: while querying user by email-x3cat9nrq1@knmcadibav.com during user creation: <nil>
+2024/07/15 19:35:00.820393 logger.go:65: Error: while querying user by email-iexes5ylv2@rfcdrive.com during user creation: <nil>

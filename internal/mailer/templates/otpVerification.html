@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{.Title}}</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				margin-bottom: 10px;
+			}
+			ol {
+				margin-bottom: 10px;
+				padding-left: 20px;
+			}
+			a {
+				color: #3498db;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			em {
+				font-style: italic;
+				font-size: 0.8em;
+				color: #888;
+			}
+			footer {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Welcome to {{.Company}}</p>
+		<p>Thank you for signing up for our service. To complete your registration, please use the following one-time password (OTP):</p>
+        <b>{{.Code}}</b>
+        <p>Please enter this verification code within the next 10 minutes for confirmation of your email address and activate your account</p>.
+		<p>Thank you for choosing {{.Company}}. We look forward to serving you!</p>
+        <p> If you did not request this verification, please ignore this email.</p>
+		<p>Best regards,<br>{{.Company}}</p>
+		<footer>
+			<p><em>Note: This is an auto-generated email for account confirmation purposes. Please do not reply directly to this message.</em></p>
+		</footer>
+	</body>
+</html>

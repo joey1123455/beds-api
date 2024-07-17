@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{.Title}}</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				margin-bottom: 10px;
+			}
+			ol {
+				margin-bottom: 10px;
+				padding-left: 20px;
+			}
+			a {
+				color: #3498db;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			em {
+				font-style: italic;
+				font-size: 0.8em;
+				color: #888;
+			}
+			footer {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Welcome to flux!</p>
+		<p>To complete the login process use this verification code: <b>{{.Code}}</b>.</p>
+		<p>This code will expire in {{.ExpiryTime}} for security reasons. If you don't confirm your login request within that time, you'll need to request again.</p>
+		<p>If you have any questions or need assistance, please don't hesitate to contact our support team at <a href="mailto:{{.CustomerSupportMail}}?subject=Account Registration Support">support@flux.com</a>.</p>
+		<p>Thank you for choosing Miva. We look forward to serving you!</p>
+		<p>Best regards,<br>flux</p>
+		<footer>
+			<p><em>Note: This is an auto-generated email for account confirmation purposes. Please do not reply directly to this message.</em></p>
+		</footer>
+	</body>
+</html>
